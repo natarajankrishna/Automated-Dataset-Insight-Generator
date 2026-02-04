@@ -1,0 +1,53 @@
+# Automated Exploratory Data Analysis (EDA) System
+
+## Project Overview
+This project implements an automated Python system that performs exploratory data analysis (EDA) on any user-provided CSV dataset. Given a dataset, the system automatically generates dataset summaries, descriptive statistics, visualizations, and human-readable insights without manual intervention.
+
+The goal is to replicate and extend the in-class “getting to know your data” workflow in a fully automated and reproducible way.
+
+## Features
+- Automatically loads and inspects any CSV dataset
+- Performs data quality checks:
+  - Missing values
+  - Duplicate rows
+  - Constant-value columns
+  - High-missingness columns
+- Computes descriptive statistics for numeric and categorical variables
+- Flags outliers using the 1.5×IQR rule
+- Generates at least five visualizations:
+  - Histogram
+  - Boxplot
+  - Bar chart
+  - Scatter plot
+  - Correlation heatmap
+- Produces 5–10 human-readable insights based on computed results
+- Includes limitations and potential bias notes
+- Runs end-to-end with a single function call
+
+## How It Works
+The system is organized as a modular pipeline:
+
+1. **Data Loading**
+2. **Dataset Overview & Quality Checks**
+3. **Descriptive Statistics**
+4. **Visualization Generation**
+5. **Insight & Limitation Generation**
+6. **Combined Automated Report**
+
+All steps are executed automatically once a CSV file is provided.
+
+## Repository Structure
+src/ - Python source code
+data/ - Example datasets
+video/ - Demo screencast
+
+Create a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # windows
+
+pip install -r requirements.txt
+
+from run_automated_eda import run_automated_eda
+report = run_automated_eda("sample_dataset.csv")
