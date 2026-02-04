@@ -27,12 +27,12 @@ The goal is to replicate and extend the in-class “getting to know your data”
 ## How It Works
 The system is organized as a modular pipeline:
 
-1. **Data Loading**
-2. **Dataset Overview & Quality Checks**
-3. **Descriptive Statistics**
-4. **Visualization Generation**
-5. **Insight & Limitation Generation**
-6. **Combined Automated Report**
+1. Data Loading
+2. Dataset Overview & Quality Checks
+3. Descriptive Statistics
+4. Visualization Generation
+5. Insight & Limitation Generation
+6. Combined Automated Report
 
 All steps are executed automatically once a CSV file is provided.
 
