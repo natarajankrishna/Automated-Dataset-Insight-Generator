@@ -8,6 +8,9 @@ Original file is located at
 """
 
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def load_csv_dataset(csv_path):
     # Common missing value representations found in real datasets
@@ -63,7 +66,6 @@ def dataset_overview_and_quality(df, missing_threshold=0.4):
     }
     return overview
 
-import numpy as np
 def compute_descriptive_statistics(df, text_unique_threshold=0.9):
     stats = {
         "numeric": {},
@@ -120,10 +122,6 @@ def compute_descriptive_statistics(df, text_unique_threshold=0.9):
                 "percentages": percentages.round(2).to_dict()
             }
     return stats
-
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 def generate_visualizations(df):
     plots_created = []
