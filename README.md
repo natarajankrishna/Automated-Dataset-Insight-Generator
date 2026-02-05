@@ -51,3 +51,5 @@ pip install -r requirements.txt
 
 from run_automated_eda import run_automated_eda
 report = run_automated_eda("sample_dataset.csv")
+
+Google Drive link for the screencast videos: https://drive.google.com/drive/folders/1QKtV4y9TF-zbcosL5kkkeEJqjX1FumoC?usp=sharing
